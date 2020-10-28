@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "email": "julia@julia.com",
+        "password": "$2a$09$AYrwTWm2ISLzqRZGYiN/Q.lm1F0.Yo9xA25WWvMnPWp1sORQTkYlS",
+        "__comment": "password hasheada 9 rounds = 123456789"
+    },
+    {
+        "id": 2,
+        "email": "test@test.com",
+        "password": "$2a$09$AYrwTWm2ISLzqRZGYiN/Q.lm1F0.Yo9xA25WWvMnPWp1sORQTkYlS",
+        "__comment": "password hasheada 9 rounds = 123456789"
+    },
+    {
+        "id": 3,
+        "email": "test2@test2.com",
+        "password": "$2a$09$AYrwTWm2ISLzqRZGYiN/Q.lm1F0.Yo9xA25WWvMnPWp1sORQTkYlS",
+        "__comment": "password hasheada 9 rounds = 123456789"
+    }
+]
