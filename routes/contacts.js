@@ -1,10 +1,9 @@
 const express = require('express');
 const router = express.Router();
-
-const verifyToken = require('../middlewares/verifyToken');
 const contacts = require('../data/contacts.json');
+const { verifyAccessToken } = require('../helpers/jwt_helper');
 
-router.get('/', verifyToken, (req, res) => {
+router.get('/', verifyAccessToken, (req, res) => {
     res.json(contacts)
 })
 

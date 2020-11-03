@@ -1,0 +1,29 @@
+### Login Route
+POST http://localhost:4000/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "test@test.com",
+    "password": "123456789",
+    "remember": "false"
+}
+
+### Refresh-token Route
+POST http://localhost:4000/api/auth/refresh-token
+Content-Type: application/json
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsInVzZXJFbWFpbCI6InRlc3RAdGVzdC5jb20iLCJpYXQiOjE2MDQzODgwNDgsImV4cCI6MTYzNTk0NTY0OH0.RPokXhYi5nK2uGfkXHMFr8shrSSnz1jciVGGnrVz_mU"
+}
+
+### Logout Route
+DELETE http://localhost:4000/api/auth/logout
+Content-Type: application/json
+
+{
+    "refreshToken": ""
+}
+
+### Contacts Route
+GET http://localhost:4000/api/contacts
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsInVzZXJFbWFpbCI6InRlc3RAdGVzdC5jb20iLCJpYXQiOjE2MDQ0MTkxMDQsImV4cCI6MTYwNDUwNTUwNH0.WCCB996nv-jnqt9dwgnBXD3OzOpdFv3FCvZjHOkPKOg
