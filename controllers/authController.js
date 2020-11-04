@@ -24,7 +24,7 @@ module.exports = {
   
             const accessToken = await signAccessToken(userWithoutPass, remember)
             const refreshToken = await signRefreshToken(userWithoutPass)
-            res.send({token: accessToken, refreshToken, user: userWithoutPass})
+            res.send({token: accessToken, refreshToken})
     
         } catch (error) {
             if(error.isJoi === true) 
@@ -42,7 +42,7 @@ module.exports = {
             const remember = false;
             const accessToken = await signAccessToken(user, remember) 
             const refToken = await signRefreshToken(user)
-            res.send({ accessToken, refreshToken: refToken, user })
+            res.send({ token: accessToken, refreshToken: refToken })
         } catch (error) {
             next(error)
         }
