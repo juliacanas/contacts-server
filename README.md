@@ -19,7 +19,26 @@ Finally run:
 
 `$ npm start`
 
+# Folder Structure
 
+```bash
+├── controllers
+│   └── authController.js
+├── data
+│   ├── contacts.json
+│   └── loginUsers.json
+├── helpers
+│   ├── jwt_helper.js
+│   └── validation_schema.js
+├── routes
+│   ├── auth.js
+│   └── contacts.js
+├── package.json
+├── package-lock.json
+├── rest.http
+└── server.js
+
+```
 # Important information
 
 * In the **data folder** of the project, there is a json file called **loginUsers.json** There are 3 users mocked to be able to login to the application.
