@@ -16,13 +16,6 @@ Content-Type: application/json
     "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsInVzZXJFbWFpbCI6InRlc3RAdGVzdC5jb20iLCJ1c2VyTmFtZSI6InRlc3QiLCJpYXQiOjE2MDQ0MjkwNTIsImV4cCI6MTYzNTk4NjY1Mn0.gigNMIN314ntuPGU1CNCCedP8JYdl4BQizs0DeBhP28"
 }
 
-### Logout Route
-DELETE http://localhost:4000/api/auth/logout
-Content-Type: application/json
-
-{
-    "refreshToken": ""
-}
 
 ### Contacts Route
 GET http://localhost:4000/api/contacts
